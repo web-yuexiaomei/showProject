@@ -1,0 +1,41 @@
+footer{
+	margin:0 auto;
+	text-align:center;
+	color:#6f6f6f;
+	position: relative;
+	z-index: 1;
+}
+footer>div>img{
+	width:163px;
+	opacity:0.9;
+}
+ul.footer{
+	display:flex;
+	justify-content:space-between;
+	margin:0 auto;
+	width:450px;
+	margin-top:5px;
+}
+ul.footer>li{
+	width:110px;
+}
+ul.footer>li>a{
+	color:#6f6f6f;
+	font:14px "Microsoft yahei";
+	display:inline-block;
+	margin-right:8px;
+}
+ul.footer>li>a:hover{
+	color:#8B8B8B;
+}
+ul.footer>li u{
+	padding-left:5px;
+	border-right:1px solid #808080;
+
+}
+footer p{
+	width:500px;
+	margin:0 auto;
+	font:14px "Microsoft yahei";
+	padding-top:8px;
+}

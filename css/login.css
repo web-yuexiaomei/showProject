@@ -1,0 +1,157 @@
+body{
+	background:url(../imgs/register/bg4.jpg) no-repeat 0px 80px;
+	background-size:contain;
+	background-attachment:fixed;
+}
+#login{
+	width:480px;
+	height:410px;
+	background-color:#DFE3EC;
+	margin-top:118px;
+	margin-left:280px;
+	padding:20px 30px;
+	display:flex;
+	justify-content:space-between;
+	border-radius:40px;
+	position: fixed;
+}
+/*<!--2.左侧欢迎登录-->*/
+#login>div.leftPart{
+	width:310px;
+	box-sizing:border-box;
+}
+/*<!--2.1表单的登录模块-->*/
+#login>div.leftPart h3{
+	width:270px;
+	height:50px;
+	line-height:70px;
+	text-align:center;
+	margin:0 auto;
+	color:#37b5f9;
+	font-size:18px;
+}
+#login>div.leftPart div{
+	width:320px;
+	height:60px;
+}
+#login>div.leftPart form input{
+	padding-left:22px;
+	width:220px;
+	height:40px;
+	box-sizing:border-box;
+	border:1px solid #9A9A9A;
+	margin-left:32px;
+}
+#login>div.leftPart form>div>img{
+	position:relative;
+	left:30px;
+	top:10px;
+}
+#login form>div:nth-child(2)>p{
+	width:200px;
+	margin-left:77px;
+	line-height:14px;
+	color:red;
+	margin-top:7px;
+	background:url("../imgs/register/err.png") no-repeat left center;
+	padding-left:24px;
+	height:14px;
+}
+#login form>div:nth-child(3){
+	width:220px;
+	height:40px;
+	line-height:40px;
+	box-sizing:border-box;
+	margin-left:66px;
+}
+#login form>div:nth-child(3) input{
+	width:15px;
+	height:15px;
+	position:relative;
+	top:3px;
+	left:-16px;
+}
+#login form>div:nth-child(3)>b{
+	color:#323132;	
+	margin-left:-16px;
+}
+#login form>div:nth-child(3) a{
+	display:inline-block;
+	width:70px;
+	height:15px;
+	font-size:14px;
+	margin-left:60px;
+	color:#5DC2F8;
+}
+#login form>div:nth-child(3) a:hover{
+	color:#0AA1ED;
+}
+#login form>div:nth-child(4) input{	
+	background:#37b5f9;
+	color:#fff;
+	cursor:pointer;
+	border-radius:3px;
+	font-size:14px;
+	padding-right:44px;
+	box-sizing:border-box;
+	margin-left:65px;
+}
+#login form>div:nth-child(4) input:hover{
+	opacity:0.8;
+}
+/*<!--3.右侧使用账号直接登录-->*/
+#login>div.rightPart{
+	width:236px;
+	box-sizing:border-box;
+	background:rgba(237,237,237,0.2);
+	border-radius:20px;
+	margin-top:4px;
+}
+/*<!--3.右侧使用账号直接登录-->*/
+#login>div.rightPart p{
+	width:100%;
+	margin:0 auto;
+	color:#999999;
+	font-weight:bold;
+	margin:26px 0 10px 30px;
+}
+#login>div.rightPart>a{
+	display:inline-block;
+	width:70%;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	margin:20px 0 5px 30px;
+	font-weight:bold;
+	border-radius:3px;
+}
+#login>div.rightPart>a:hover{
+	text-decoration:underline;
+}
+#login>div.rightPart a.qq{
+	background:url(../imgs/register/qq.jpg) no-repeat 16% center;
+	border:1px solid #34B6F7;
+	color:#34B6F7;
+}
+#login>div.rightPart a.wb{
+	background:url(../imgs/register/wb.jpg) no-repeat 16% center;
+	border:1px solid #F47A91;
+	color:#F47A91;
+}
+#login>div.rightPart a.wx{
+	background:url(../imgs/register/wx.jpg) no-repeat 16% center;
+	border:1px solid #03D000;
+	color:#03D000;
+}
+#login>div.rightPart a.login{
+	color:#5DC2F8;
+	font-weight:bold;
+}
+#login>div.rightPart a.login:hover{
+	color:#0AA1ED;
+	text-decoration:underline;
+}
+/*js控制的样式设计*/
+.vali_info{/* 页面初始，验证消息不显示 */
+	display:none;
+}

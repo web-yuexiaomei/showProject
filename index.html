@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>金夫人首页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+<!--背景-->
+<div class="bg">
+	<canvas id="c1"></canvas>
+</div>
+<!--1.头部-->
+ <header id="header"></header>
+<!--2.首页主体-->
+<section class="main" id="main">
+	<!--2.1 banner广告-->
+	<div class="banner" id="banner2">
+		<div class="banner-view"></div>
+		<div class="banner-btn"></div>
+		<div class="banner-number"></div>
+		<div class="banner-progres"></div>
+	</div>
+	<!--2.2 特别推荐栏目-->
+	<div class="show floor">
+		<!--标题-->
+		<div class="title title1">
+			<div class="text-down">
+				<span class="span1">视</span>
+				<span class="span2">频</span>
+				<span class="span3">宣</span>
+				<span class="span4">传</span>
+			</div>
+			<div class="text">
+				<span>视</span>
+				<span>频</span>
+				<span>宣</span>
+				<span>传</span>
+			</div>
+		</div>
+		<!--视频-->
+		<div class="video">
+			<video  class="v2" src="imgs/index/1.mp4" width="1440px" height="800px">
+					版本太低，不能播放，请升级！
+			</video>
+			<!--视频广告桢-->
+			<img src="imgs/index/ad4.jpg" class="ad">
+			<!--视频播放控制按钮-->
+			<span class="ctrl">
+				<img src="imgs/index/play.png" alt="">
+			</span>
+		</div>
+	</div>
+	<!--2.3 近期推荐-->
+	<div class="style floor">
+		<!--标题-->
+		<div class="title  title2">
+			<div class="text-down">
+				<span class="span1">近</span>
+				<span class="span2">期</span>
+				<span class="span3">推</span>
+				<span class="span4">荐</span>
+			</div>
+			<div class="text">
+				<span>近</span>
+				<span>期</span>
+				<span>推</span>
+				<span>荐</span>
+			</div>
+		</div>
+		<!--推荐展示-->
+		<ul class="desc">
+			<!--2.3.1 近期推荐:左边-->
+			<li class="side">
+				<!--上面的模块-->
+				<div>
+					<!--图片展示-->
+					<img src="imgs/index/sample_1.jpg" alt="">
+					<!--图片上的文字展示-->
+					<p>
+						&nbsp;梦中婚礼<br>
+						Dream Wedding
+					</p>
+				</div>
+				<!--下面的模块-->
+				<div>
+					<!--图片展示-->
+					<img src="imgs/index/sample_2.jpg" alt="">
+					<!--图片上的文字展示-->
+					<p class="title_bottom">
+						&nbsp;完美假期<br>
+						Perfect Holiday
+					</p>
+				</div>
+			</li>
+			<!--2.3.2 近期推荐:中间-->
+			<li class="center">
+				<div>
+					<!--图片展示-->
+					<img src="imgs/index/sample_3.jpg" alt="">
+					<!--图片上的文字展示-->
+					<p>
+						&nbsp;丛林物语<br>
+							Jungle Mist
+					</p>
+				</div>
+			</li>
+			<!--2.3.3 近期推荐:右边-->
+			<li class="side">
+				<!--上面的模块-->
+				<div>
+					<!--图片展示-->
+					<img src="imgs/index/sample_4.jpg" alt="">
+					<!--图片上的文字展示-->
+					<p>
+						&nbsp;丛林物语<br>
+						Jungle Mist
+					</p>
+				</div>
+				<!--下面的模块-->
+				<div>
+					<!--图片展示-->
+					<img src="imgs/index/sample_5.jpg" alt="">
+					<!--图片上的文字展示-->
+					<p class="title_bottom">
+						&nbsp;漫步时光<br>
+						Walking Time
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--2.4 楼层一:在线订单-->
+	<div class="floor1 floor">
+		<!--标题-->
+		<div class="title  title3">
+			<div class="text-down">
+				<span class="span1">在</span>
+				<span class="span2">线</span>
+				<span class="span3">订</span>
+				<span class="span4">单</span>
+			</div>
+			<div class="text">
+				<span>在</span>
+				<span>线</span>
+				<span>订</span>
+				<span>单</span>
+			</div>
+		</div>
+		<div class="order">
+			<!--2.4.1左边活动描述-->
+			<div class="left">
+				<a href="#">
+					<h2>金夫人秒杀</h2>
+					<p class="ak1">FLASH DEALS</p>
+					<i class="ak2"></i>
+					<p>本场距离结束还剩</p>
+					<!--活动倒计时-->
+					<div class="time">
+						<span class="day" id="day"></span>
+						<span class="hour" id="hour"></span>
+						<span class="minute" id="minute"></span>
+						<span class="second" id="second"></span>
+						<div>天&nbsp;时&nbsp;分&nbsp;秒</div>
+					</div>
+				</a>
+				<!--左边作品欣赏分类栏目-->
+				<div class="column">
+					<!--title的图片-->
+					<div class="treeShow">
+						<img src="imgs/index/s-title10.gif" alt="">	
+					</div>
+					<!--具体的分类栏目-->
+					<ul class="tree">
+						<li>
+							<a href="#" class="open">精彩作品欣赏</a>
+							<ul class="open_list">
+								<li><a href="#">时尚经典</a></li>
+								<li><a href="#">全球外景</a></li>
+								<li><a href="#">格调艺术</a></li>
+								<li><a href="#">全家福</a></li>
+								<li><a href="#">儿童照</a></li>
+								<li></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">华丽产品欣赏</a>
+							<ul class="open_list">
+								<li><a href="#">相册类</a></li>
+								<li><a href="#">摆台类</a></li>
+								<li><a href="#">相框类</a></li>
+								<li><a href="#">相框类</a></li>
+								<li></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">特色景点欣赏</a>
+							<ul class="open_list">
+								<li><a href="#">国内外景地</a></li>
+								<li><a href="#">国外外景地</a></li>
+								<li></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<!--2.4.2右边的婚纱套餐-->
+			<ul class="right">
+				<!--套餐展示-->
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o1.jpg" alt="">
+						<div class="text">
+							<h3>欧陆·戛纳明星广场</h3>
+							<p>巨资打造欧陆华丽明星广场</p>
+						</div>
+					</a>
+					<!--立即抢购-->
+					<div class="buy">
+						<!--左边的价格描述-->
+						<div class="price">
+							<span>￥2999</span>
+							<i>￥999</i>
+							<!--已售百分百、显示条-->
+							<p>
+								<span>已售26%</span>
+								<span>
+									<b class="line1"></b>
+									<b class="line2"></b>
+								</span>
+							</p>
+						</div>
+						<!--右边的立即抢购-->
+						<a href="#">立即抢购</a>
+					</div>
+				</li>
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o2.jpg" alt="">
+						<div class="text">
+							<h3>欧陆·戛纳明星广场</h3>
+							<p>巨资打造欧陆华丽明星广场</p>
+						</div>
+					</a>
+					<!--立即抢购-->
+					<div class="buy">
+						<!--左边的价格描述-->
+						<div class="price">
+							<span>￥2999</span>
+							<i>￥999</i>
+							<!--已售百分百、显示条-->
+							<p>
+								<span>已售26%</span>
+								<span>
+									<b class="line1"></b>
+									<b class="line2"></b>
+								</span>
+							</p>
+						</div>
+						<!--右边的立即抢购-->
+						<a href="#">立即抢购</a>
+					</div>
+				</li>			
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o3.jpg" alt="">
+						<div class="text">
+							<h3>欧陆·戛纳明星广场</h3>
+							<p>巨资打造欧陆华丽明星广场</p>
+						</div>
+					</a>
+					<!--立即抢购-->
+					<div class="buy">
+						<!--左边的价格描述-->
+						<div class="price">
+							<span>￥2999</span>
+							<i>￥999</i>
+							<!--已售百分百、显示条-->
+							<p>
+								<span>已售26%</span>
+								<span>
+									<b class="line1"></b>
+									<b class="line2"></b>
+								</span>
+							</p>
+						</div>
+						<!--右边的立即抢购-->
+						<a href="#">立即抢购</a>
+					</div>
+				</li>
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o4.jpg" alt="">
+						<div class="text">
+							<h3>欧陆·戛纳明星广场</h3>
+							<p>巨资打造欧陆华丽明星广场</p>
+						</div>
+					</a>
+					<!--立即抢购-->
+					<div class="buy">
+						<!--左边的价格描述-->
+						<div class="price">
+							<span>￥2999</span>
+							<i>￥999</i>
+							<!--已售百分百、显示条-->
+							<p>
+								<span>已售26%</span>
+								<span>
+									<b class="line1"></b>
+									<b class="line2"></b>
+								</span>
+							</p>
+						</div>
+						<!--右边的立即抢购-->
+						<a href="#">立即抢购</a>
+					</div>
+				</li>
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o5.jpg" alt="">
+						<div class="text">
+							<h3>欧陆·戛纳明星广场</h3>
+							<p>巨资打造欧陆华丽明星广场</p>
+						</div>
+					</a>
+					<!--立即抢购-->
+					<div class="buy">
+						<!--左边的价格描述-->
+						<div class="price">
+							<span>￥2999</span>
+							<i>￥999</i>
+							<!--已售百分百、显示条-->
+							<p>
+								<span>已售26%</span>
+								<span>
+									<b class="line1"></b>
+									<b class="line2"></b>
+								</span>
+							</p>
+						</div>
+						<!--右边的立即抢购-->
+						<a href="#">立即抢购</a>
+					</div>
+				</li>
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o6.jpg" alt="">
+						<div class="text">
+							<h3>欧陆·戛纳明星广场</h3>
+							<p>巨资打造欧陆华丽明星广场</p>
+						</div>
+					</a>
+					<!--立即抢购-->
+					<div class="buy">
+						<!--左边的价格描述-->
+						<div class="price">
+							<span>￥2999</span>
+							<i>￥999</i>
+							<!--已售百分百、显示条-->
+							<p>
+								<span>已售26%</span>
+								<span>
+									<b class="line1"></b>
+									<b class="line2"></b>
+								</span>
+							</p>
+						</div>
+						<!--右边的立即抢购-->
+						<a href="#">立即抢购</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--2.5 楼层二:全国各店-->
+	<div class="floor2 floor">
+		<div class="title  title4">
+			<div class="text-down">
+				<span class="span1">全</span>
+				<span class="span2">国</span>
+				<span class="span3">各</span>
+				<span class="span4">店</span>
+			</div>
+			<div class="text">
+				<span>全</span>
+				<span>国</span>
+				<span>各</span>
+				<span>店</span>
+			</div>
+		</div>
+		<div class="city">
+			<div class="contents" style="width:1100px; margin:0 auto;">
+    <div class="b_map">
+        <ul id="m_btn" class="e_map_tags">
+            <li class="m_beijing centers" data-type="chengdu">成都</li>
+            <li class="m_shanghai" data-type="shanghai">上海</li>
+            <li class="m_hangzhou" data-type="hangzhou">广州</li>
+        </ul>
+        <div class="e_map_info">
+            <div class="m_content m_beijing hide" data-panel="beijing" style="display:block;" >
+                  <div class="m_content_side">
+					   <a href="javascript:;" class="m_left"><img src="imgs/index/arraw-left.png" /></a>
+                   <a href="javascript:;" class="m_right"><img src="imgs/index/arraw-right.png" /></a>
+                  </div>
+                  <p style="text-align:center; font-size:20px; padding-bottom:20px;">成都</p>
+                  <div><img src="imgs/index/chengdu.jpg" /></div>
+                  <p style="text-align:justify; width:270px;">金夫人婚纱摄影，从创立以来，一直以专注的态度，敢为天下先的革新精神服务新人。打破行业坚冰，底片拍多少送多少，精修精调刻盘赠送；纯净透明空间，礼服预选过程零加价；全设计看样看搞，省时省力省心；首创先河，建立影楼价值营销体系，从一众价格混战中脱颖而出 ,2016年更是0定金拍摄率先试点。不断打破旧格局，大胆建立新模式。金夫人凭借自身敏锐的洞察力与前瞻性，速度成长扩张，成为中国金夫人集团华东婚纱摄影中坚力量。</p>
+            </div>
+            
+            <div class="m_content m_shanghai hide" data-panel="shanghai">
+                 <div class="m_content_side">
+                   <a href="javascript:;" class="m_left"><img src="imgs/index/arraw-left.png" /></a>
+                   <a href="javascript:;" class="m_right"><img src="imgs/index/arraw-right.png" /></a>
+                 </div>
+                 <p style="text-align:center; font-size:20px; padding-bottom:20px;">上海</p>
+                  <div><img src="imgs/index/shanghai.jpg" /></div>
+                  <p style="text-align:justify; width:270px;">金夫人婚纱摄影，从创立以来，一直以专注的态度，敢为天下先的革新精神服务新人。打破行业坚冰，底片拍多少送多少，精修精调刻盘赠送；纯净透明空间，礼服预选过程零加价；全设计看样看搞，省时省力省心；首创先河，建立影楼价值营销体系，从一众价格混战中脱颖而出 ,2016年更是0定金拍摄率先试点。不断打破旧格局，大胆建立新模式。金夫人凭借自身敏锐的洞察力与前瞻性，速度成长扩张，成为中国金夫人集团华东婚纱摄影中坚力量。</p>
+            </div>
+            
+            <div class="m_content m_hangzhou hide" data-panel="hangzhou">
+                <div class="m_content_side">
+                   <a href="javascript:;" class="m_left"><img src="imgs/index/arraw-left.png" /></a>
+                   <a href="javascript:;" class="m_right"><img src="imgs/index/arraw-right.png" /></a>
+                </div>
+                <p style="text-align:center; font-size:20px; padding-bottom:20px;">广州</p>
+                  <div><img src="imgs/index/guangzhou.jpg" /></div>
+                  <p style="text-align:justify; width:270px;">金夫人婚纱摄影，从创立以来，一直以专注的态度，敢为天下先的革新精神服务新人。打破行业坚冰，底片拍多少送多少，精修精调刻盘赠送；纯净透明空间，礼服预选过程零加价；全设计看样看搞，省时省力省心；首创先河，建立影楼价值营销体系，从一众价格混战中脱颖而出 ,2016年更是0定金拍摄率先试点。不断打破旧格局，大胆建立新模式。金夫人凭借自身敏锐的洞察力与前瞻性，速度成长扩张，成为中国金夫人集团华东婚纱摄影中坚力量。</p>
+            </div>
+        </div>
+    </div>
+</div>
+		</div>
+	</div>
+	<!--2.6 楼层三:客照欣赏-->
+	<div class="floor3 floor">
+		<div class="title  title5">
+			<div class="text-down">
+				<span class="span1">客</span>
+				<span class="span2">照</span>
+				<span class="span3">欣</span>
+				<span class="span4">赏</span>
+			</div>
+			<div class="text">
+				<span>客</span>
+				<span>照</span>
+				<span>欣</span>
+				<span>赏</span>
+			</div>
+		</div>
+		<div class="guest-photos">
+		</div>
+		<!--客照欣赏的图片展示-->
+		<div class="show_contain">
+			<ul>
+				<!--套餐展示-->
+				<li  class="right">
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o1.png" alt="">
+						<div class="text">
+							<div class="cover">
+								<h3>欧陆·戛纳明星广场</h3>
+								<p>巨资打造欧陆华丽明星广场</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li  class="right">
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o2.png" alt="">
+						<div class="text">
+							<div class="cover">
+								<h3>欧陆·戛纳明星广场</h3>
+								<p>巨资打造欧陆华丽明星广场</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o3.png" alt="">
+						<div class="text">
+							<div class="cover">
+								<h3>欧陆·戛纳明星广场</h3>
+								<p>巨资打造欧陆华丽明星广场</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li  class="right">
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o4.png" alt="">
+						<div class="text">
+							<div class="cover">
+								<h3>欧陆·戛纳明星广场</h3>
+								<p>巨资打造欧陆华丽明星广场</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li  class="right">
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o5.png" alt="">
+						<div class="text">
+							<div class="cover">
+								<h3>欧陆·戛纳明星广场</h3>
+								<p>巨资打造欧陆华丽明星广场</p>
+							</div>
+						</div>
+					</a>
+					<!--立即抢购-->
+				</li>
+				<li>
+					<!--图片和文字描述-->
+					<a href="#">
+						<img src="imgs/index/o6.png" alt="">
+						<div class="text">
+							<div class="cover">
+								<h3>欧陆·戛纳明星广场</h3>
+								<p>巨资打造欧陆华丽明星广场</p>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--2.7楼层的导航-->
+	<ul class="lift">
+		<li>
+			<a href="#">视频宣传</a>
+		</li>
+		<li>
+			<a href="#">近期推荐</a>
+		</li>
+		<li>
+			<a href="#">在线订单</a>
+		</li>
+		<li>
+			<a href="#">全国各店</a>
+		</li>
+		<li>
+			<a href="#">客照欣赏</a>
+		</li>
+	</ul>
+</section>
+<!--3.引入底部-->
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/index.js"></script>
+<script src="js/footer.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script src="js/img.js"></script>
+</body>
+</html>

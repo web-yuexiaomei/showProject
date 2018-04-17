@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<script src="../js/common.js"></script>
+</head>
+<body>
+	<!--1.注册页面主体 -->
+	<div id="register">
+		<!--2.左侧欢迎注册-->
+		<div class="leftPart">
+			<h3>欢&nbsp;迎&nbsp;注&nbsp;册</h3>
+			<!--2.1表单的注册模块-->
+			<form action="../php/register.php" method="post">
+				<!--用户名-->
+				<div>
+					<!--输入用户名-->
+					<img src="../imgs/register/yhm.png" alt=""><input type="text" id="uname" name="uname" placeholder="用 户 名(6-12位字母或数字)">
+					<span></span>
+					<!--验证用户名-->
+					<p class="vali_info">6-12位字母或数字</p>
+					<b class="vali_info" id="show">用户名已存在</b>
+				</div>
+				<!--密码-->
+				<div>
+					<!--输入密码-->
+					<img src="../imgs/register/mm.png" alt=""><input type="password" id="upwd" name="upwd" placeholder="密 码 (6~12位字母或数字)">
+					<span></span>
+					<!--验证密码-->
+					<p class="vali_info">6-12位字母或数字</p>
+				</div>
+				<!--确认密码-->
+				<div>
+					<!--输入确认密码-->
+					<img src="../imgs/register/true.png" alt="" class="spec">
+					<input type="password" id="cpwd" name="cpwd" placeholder="确 认 密 码">
+					<span></span>
+					<!--验证确认密码-->
+					<p class="vali_info">两次密码不一致</p>
+				</div>
+				<!--邮箱-->
+				<div>
+					<!--输入邮箱-->
+					<img src="../imgs/register/icon1.png" alt=""><input type="email" id="email" name="email" placeholder="邮 箱 (正确的邮箱格式)">
+					<span></span>
+					<!--验证邮箱-->
+					<p class="vali_info">请输入正确的邮箱格式</p>
+				</div>
+				<!--验证码-->
+				<div>
+					<img src="../imgs/register/2.png" alt="">
+					<input type="text" name="code" id="code" placeholder="- 点击获取验证码 -">
+					<span id="msg"></span>
+					<!--验证密码-->
+					<p class="code vali_info" id="code_show">
+						<img src="../php/getCode.php" title="看不清换一张" alt="">
+					</p>
+				</div>
+				<div>
+					<input type="checkbox" name="checkbox">
+					<b>已阅读并同意</b>
+					<a href="#">《金夫人使用协议》</a>
+				</div>
+				<div>
+					<input type="button" value="注   册" id="button">	
+				</div>
+			</form>
+		</div>
+		<!--3.右侧使用账号直接登录-->
+		<div class="rightPart">
+			<p>使用以下账号直接登录</p>
+			<a href="#" class="qq">QQ注册</a>
+			<a href="#" class="wb">微博注册</a>
+			<a href="#" class="wx">微信注册</a>
+			<p>
+				已有账号？
+				<a href="#" class="login">立即登陆</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/register.js"></script>

@@ -1,0 +1,203 @@
+body{
+	background:url(../imgs/register/bg4.jpg) no-repeat 0px 80px;
+	background-size:contain;
+	background-attachment:fixed;
+}
+#register{
+	width:480px;
+	height:410px;
+	background-color:#DFE3EC;
+	margin-top:81px;
+	margin-left:280px;
+	padding:20px 30px;
+	display:flex;
+	justify-content:space-between;
+	border-radius:40px;
+}
+/*<!--2.左侧欢迎注册-->*/
+#register>div.leftPart{
+	width:310px;
+	box-sizing:border-box;
+}
+/*<!--2.1表单的注册模块-->*/
+#register>div.leftPart h3{
+	width:270px;
+	height:50px;
+	line-height:70px;
+	text-align:center;
+	margin-left:20px;
+	color:#37b5f9;
+	font-size:18px;
+}
+#register>div.leftPart div{
+	width:320px;
+	height:60px;
+}
+#register>div.leftPart form input{
+	padding-left:22px;
+	width:220px;
+	height:40px;
+	box-sizing:border-box;
+	border:1px solid #9A9A9A;
+	margin-left:30px;
+}
+#register>div.leftPart form>div>img{
+	position:relative;
+	left:23px;
+	top:9px;
+}
+#register form>div:nth-child(1){
+	position:relative;
+}
+#register form>div:nth-child(3){
+	margin:3px 0 3px -6px;
+}
+#register form>div:nth-child(3) img.spec{
+	width:28px;
+	left:28px;
+}
+#register form>div:nth-child(5) input{
+	margin-left:25px;
+}
+#register form>div:nth-child(5)>p.code img{
+	width:90px;
+	height:34px;
+	margin-left:-42px;
+}
+#register form>div:nth-child(6){
+	margin-top:20px;
+	height:40px;
+	margin-left:19px;
+}
+/*//验证码模块*/
+#register form>div:nth-child(1)>b{
+	color:red;
+	position:absolute;
+	top:10px;
+	left:281px;
+}
+#register form>div:nth-child(6) input{
+	width:15px;
+	height:15px;
+	margin-left:40px;
+	position:relative;
+	top:2px;
+}
+#register form>div:nth-child(6) a{
+	color:#37b5f9;
+	font:bold 15px "microsoft yahei",simsun,Tahoma,sans-serif
+}
+#register form>div:nth-child(6) a:hover{
+	color:#0AA1ED;
+	text-decoration:underline;
+}
+#register form>div:nth-child(7) input{
+	padding:0;
+	background:#37b5f9;
+	border-radius:3px;
+	color:#fff;
+	line-height:35px;
+	text-align:center;
+	margin:-11px 0 0 57px;
+	font-weight:bold;
+	cursor:pointer;
+}
+#register form>div:nth-child(7) input:hover{
+	opacity:0.8;
+}
+/*//验证信息模块*/
+#register form>div>p{
+	margin-left:70px;
+	margin-top:3px;
+	padding-left:30px;
+	font-weight:bold;
+	font-size:14px;
+	height:15px;
+}
+#register form>div:nth-child(3)>p{
+	margin-left:76px;
+}
+#register form>div span{
+	display:inline-block;
+	padding:2px 0 2px 0;
+	position:relative;
+	color:#F47A91;
+	width:25px;
+	height:25px;
+	top:7px;
+	box-sizing:border-box;
+}
+/*<!--3.右侧使用账号直接登录-->*/
+#register>div.rightPart{
+	width:236px;
+	box-sizing:border-box;
+	background:rgba(237,237,237,0.2);
+	border-radius:20px;
+	margin-top:4px;
+}
+/*<!--3.右侧使用账号直接登录-->*/
+#register>div.rightPart p{
+	width:100%;
+	margin:0 auto;
+	color:#999999;
+	font-weight:bold;
+	margin:26px 0 10px 30px;
+}
+#register>div.rightPart>a{
+	display:inline-block;
+	width:70%;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	margin:20px 0 5px 30px;
+	font-weight:bold;
+	border-radius:3px;
+}
+#register>div.rightPart>a:hover{
+	text-decoration:underline;
+}
+#register>div.rightPart a.qq{
+	background:url(../imgs/register/qq.jpg) no-repeat 16% center;
+	border:1px solid #34B6F7;
+	color:#34B6F7;
+}
+#register>div.rightPart a.wb{
+	background:url(../imgs/register/wb.jpg) no-repeat 16% center;
+	border:1px solid #F47A91;
+	color:#F47A91;
+}
+#register>div.rightPart a.wx{
+	background:url(../imgs/register/wx.jpg) no-repeat 16% center;
+	border:1px solid #03D000;
+	color:#03D000;
+}
+#register>div.rightPart a.login{
+	color:#5DC2F8;
+	font-weight:bold;
+}
+#register>div.rightPart a.login:hover{
+	color:#0AA1ED;
+	text-decoration:underline;
+}
+/*js控制的样式设计*/
+.vali_info{/* 页面初始，验证消息不显示 */
+	display:none;
+}
+#register>div.leftPart form input.txt_focus{/*当文本框获得焦点时穿上*/
+	border:1px solid #5F5D5D;
+}/*当文本框失去焦点时脱下*/
+
+/* 验证消息：验证通过时的样式 */
+.vali_success{
+    background:url("../imgs/register/ok.png") no-repeat left center;
+	padding-left:20px;
+	width:0px;
+	height:20px;
+	overflow:hidden;
+}
+/* 验证消息：验证失败时的样式 */
+.vali_fail{
+    background:url("../imgs/register/err.png") no-repeat left center;
+    color:#F47A91;
+    padding-left:30px;
+}
